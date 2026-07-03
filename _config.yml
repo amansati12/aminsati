@@ -1,0 +1,39 @@
+title: "Amin Sati | Social Media Management Packages"
+description: >-
+  Premium Social Media Management Packages by Amin Sati, Porbandar.
+  Instagram post design, carousel posts, reel video concepts, captions,
+  hashtags aur monthly content planning — sab AI tools se professional
+  quality me.
+keywords: >-
+  Social Media Management Porbandar, Instagram Post Design, Reel Video
+  Concepts, Social Media Packages, Content Planning, Digital Marketing
+  Porbandar, Amin Sati Social Media Services, Social Media Marketing for
+  Local Business, Instagram Marketing Porbandar
+url: "https://your-username.github.io"        # change after deploying (e.g. GitHub Pages)
+baseurl: ""                                     # e.g. "/repo-name" if using project pages
+
+# Business details — used across layouts/includes
+owner_name: "Amin Sati"
+phone_display: "+91 9913876568"
+phone_link: "919913876568"
+whatsapp_link: "https://wa.me/919913876568"
+address: "S1, Second Floor, Shiv Kuber Complex, Ugandar Road, Porbandar 360575"
+
+# Where contact-form enquiries should land.
+# This only LABELS the inbox — the actual delivery is done by the form
+# endpoint set in _data/site_info.yml (see README "Contact form setup").
+contact_email: "satiamin786@gmail.com"
+
+# Social share image
+og_image: "https://placehold.co/1200x630/A98232/F7F1E6?text=Amin+Sati+SMM+Packages"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

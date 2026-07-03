@@ -1,0 +1,50 @@
+- name: "Basic Package"
+  price: "8,000"
+  best_for: "Regular product posting and brand presence"
+  popular: false
+  total: 21
+  features:
+    - "15 Single Post Creatives"
+    - "2 Carousel Posts"
+    - "4 Reel Video Concepts"
+    - "Captions for all posts"
+    - "Hashtags for all posts"
+    - "Basic monthly content planning"
+    - "Product promotion content"
+    - "Posting support/guidance"
+
+- name: "Standard Package"
+  price: "10,000"
+  best_for: "Product promotion + better engagement"
+  popular: true
+  total: 26
+  features:
+    - "15 Single Post Creatives"
+    - "5 Carousel Posts"
+    - "6 Reel Video Concepts"
+    - "Captions for all posts"
+    - "Hashtags for all posts"
+    - "Monthly content calendar"
+    - "Product-based promotional content"
+    - "AI influencer post concepts"
+    - "Engagement CTA content"
+    - "Posting support/guidance"
+
+- name: "Premium Package"
+  price: "12,000"
+  best_for: "Active brand awareness + strong engagement"
+  popular: false
+  total: 32
+  features:
+    - "15 Single Post Creatives"
+    - "9 Carousel Posts"
+    - "8 Reel Video Concepts"
+    - "Captions for all posts"
+    - "Hashtags for all posts"
+    - "Full monthly content calendar"
+    - "AI influencer-based creatives"
+    - "Product advertisement concepts"
+    - "Festival/offer post concepts"
+    - "Youth-focused Hinglish ad copy"
+    - "Engagement CTA content"
+    - "Basic posting support/guidance"
