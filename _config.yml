@@ -9,8 +9,8 @@ keywords: >-
   Concepts, Social Media Packages, Content Planning, Digital Marketing
   Porbandar, Amin Sati Social Media Services, Social Media Marketing for
   Local Business, Instagram Marketing Porbandar
-url: "https://your-username.github.io"        # change after deploying (e.g. GitHub Pages)
-baseurl: ""                                     # e.g. "/repo-name" if using project pages
+url: "https://amansati12.github.io"
+baseurl: "/aminsati"                            # must match your repo name exactly
 
 # Business details — used across layouts/includes
 owner_name: "Amin Sati"
