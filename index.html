@@ -1,13 +1,425 @@
----
-layout: default
-title: "Amin Sati | Social Media Management Packages"
-description: "Premium Social Media Management Packages by Amin Sati, Porbandar — Instagram posts, carousels, reel concepts, captions, hashtags aur monthly content planning."
----
-{% include hero.html %}
-{% include about.html %}
-{% include packages.html %}
-{% include samples.html %}
-{% include why.html %}
-{% include process.html %}
-{% include cta.html %}
-{% include contact.html %}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amin Sati | IT Professional & Web Developer</title>
+  <meta name="description" content="Interactive resume of Amin Sati - IT professional with 10+ years of experience in IT projects, digital marketing, C#.NET and web development.">
+  <link rel="icon" href="images/amin.jpg">
+
+  <!-- Bootstrap 5 + Icons + Fonts (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader"><div class="loader-ring"></div><span>AS</span></div>
+
+  <!-- Animated background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+  <div id="scroll-progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#home">AS<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ai-tools">AI Tools</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-sun-fill"></i></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="badge-pill reveal"><span class="pulse-dot"></span> Open to new opportunities</div>
+          <h1 class="hero-title reveal" style="--d:.1s">Hi, I'm <span class="gradient-text">Amin Sati</span></h1>
+          <h2 class="hero-role reveal" style="--d:.2s"><span id="typed"></span><span class="caret">|</span></h2>
+          <p class="hero-text reveal" style="--d:.3s">
+            IT professional with over 10 years of experience managing end-to-end IT projects, resolving technical challenges and supporting organizational change - with 8+ years of hands-on expertise in digital marketing, C#.NET and IT support.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4 reveal" style="--d:.4s">
+            <a href="#contact" class="btn btn-glow magnetic"><i class="bi bi-chat-dots-fill me-2"></i>Let's Talk</a>
+            <a href="#experience" class="btn btn-outline-glow magnetic"><i class="bi bi-briefcase-fill me-2"></i>View Experience</a>
+            <button class="btn btn-outline-glow magnetic" onclick="window.print()"><i class="bi bi-download me-2"></i>Save as PDF</button>
+          </div>
+          <div class="socials mt-4 reveal" style="--d:.5s">
+            <a href="https://linkedin.com/in/socialwithamin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com/socialwithamin" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com/socialwithamin" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com/@socialwithamin" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="mailto:satiamin68@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center">
+          <div class="photo-wrap tilt reveal zoom-in" data-bs-toggle="modal" data-bs-target="#photoModal" title="Click to zoom">
+            <div class="photo-ring"></div>
+            <img src="images/amin.jpg" alt="Amin Sati" class="photo">
+            <div class="float-chip chip-1"><i class="bi bi-code-slash"></i> C#.NET</div>
+            <div class="float-chip chip-2"><i class="bi bi-megaphone-fill"></i> Digital Marketing</div>
+            <div class="float-chip chip-3"><i class="bi bi-globe2"></i> Web Dev</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 reveal"><div class="stat-card"><i class="bi bi-hourglass-split"></i><h3 class="counter" data-target="10" data-suffix="+">0</h3><p>Years in IT</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.1s"><div class="stat-card"><i class="bi bi-window-stack"></i><h3 class="counter" data-target="10" data-suffix="+">0</h3><p>Websites Built</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.2s"><div class="stat-card"><i class="bi bi-cpu-fill"></i><h3 class="counter" data-target="100" data-suffix="+">0</h3><p>Software Solutions</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.3s"><div class="stat-card"><i class="bi bi-building-check"></i><h3 class="counter" data-target="8" data-suffix="+">0</h3><p>Govt. Depts Coordinated</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">01 / About</span><h2>Professional <span class="gradient-text">Profile</span></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal slide-left">
+          <div class="glass-card h-100">
+            <p class="lead-text">An IT professional who moves comfortably between <strong>software development</strong>, <strong>IT support</strong>, <strong>digital marketing</strong> and <strong>government-scale project rollout</strong>.</p>
+            <p>From building C#.NET and VB 6.0 applications and Jekyll websites to leading a district-level rollout across multiple government departments, I focus on delivering efficient, reliable IT solutions and clear stakeholder coordination.</p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <span class="tag">End-to-end IT Projects</span><span class="tag">Technical Training</span><span class="tag">Stakeholder Coordination</span><span class="tag">Organizational Change</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal slide-right">
+          <div class="glass-card h-100">
+            <h5 class="mb-3"><i class="bi bi-person-lines-fill me-2 text-accent"></i>Quick Facts</h5>
+            <ul class="facts">
+              <li><i class="bi bi-geo-alt-fill"></i> Porbandar, Gujarat, India</li>
+              <li><i class="bi bi-translate"></i> English, Gujarati, Hindi</li>
+              <li><i class="bi bi-mortarboard-fill"></i> BCA - Saurashtra University</li>
+              <li><i class="bi bi-envelope-fill"></i> satiamin68@gmail.com</li>
+              <li><i class="bi bi-telephone-fill"></i> +91 991387 6568</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">02 / Experience</span><h2>Career <span class="gradient-text">Journey</span></h2></div>
+      <div class="timeline">
+
+        <div class="t-item reveal slide-left">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="irad">
+            <span class="t-date">Oct 2021 - Sep 2025</span>
+            <h4>District Rollout Manager - iRAD Government Project</h4>
+            <h6>Central Government of India (Contractual)</h6>
+            <ul>
+              <li>Provided iRAD application support and training.</li>
+              <li>Delivered IT solutions to support project objectives.</li>
+              <li>Coordinated with Police, ARTO, Highways, Health, Insurance, MACT, Legal Service Authority and the District Magistrate's Office.</li>
+              <li>Supported government events.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+        <div class="t-item reveal slide-right">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="fatah">
+            <span class="t-date">2020 - 2021</span>
+            <h4>Freelance Web Designer & Developer - Fatah Digital</h4>
+            <ul>
+              <li>Developed websites using Jekyll and redesigned client websites.</li>
+              <li>Managed client communication and project coordination.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+        <div class="t-item reveal slide-left">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="jetking">
+            <span class="t-date">2019 - 2020</span>
+            <h4>Business Development Manager - Jetking Learning Center, Porbandar</h4>
+            <ul>
+              <li>Conducted IT sessions and technical training.</li>
+              <li>Provided IT solutions to individuals and businesses.</li>
+              <li>Led digital marketing initiatives and organized IT seminars.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+        <div class="t-item reveal slide-right">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="freelancer">
+            <span class="t-date">2018 - 2019</span>
+            <h4>Freelancer</h4>
+            <ul>
+              <li>Developed over 10 websites and over 100 small software solutions.</li>
+              <li>Managed digital marketing campaigns and improved clients' online presence.</li>
+              <li>Provided IT support and troubleshooting.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+        <div class="t-item reveal slide-left">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="memon">
+            <span class="t-date">2016 - 2018</span>
+            <h4>IT Assistant - Memon Emirates General Trading LLC, Dubai</h4>
+            <ul>
+              <li>Provided IT support and managed servers.</li>
+              <li>Used Tally for local purchases and procurement operations.</li>
+              <li>Maintained the company website and online updates.</li>
+              <li>Managed company bank accounts and transactions.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+        <div class="t-item reveal slide-right">
+          <div class="t-dot"></div>
+          <div class="glass-card popup-card" data-bs-toggle="modal" data-bs-target="#expModal" data-key="shiny">
+            <span class="t-date">2013 - 2015</span>
+            <h4>Software Developer / Tester - Shiny Software IT Company, Porbandar</h4>
+            <ul>
+              <li>Developed applications using C#.NET and VB 6.0.</li>
+              <li>Performed software testing and analyzed client requirements.</li>
+            </ul>
+            <span class="more">Click for details <i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">03 / Skills</span><h2>Tools & <span class="gradient-text">Expertise</span></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal slide-left">
+          <div class="glass-card h-100" id="skillBars"></div>
+        </div>
+        <div class="col-lg-6 reveal slide-right">
+          <div class="glass-card h-100">
+            <h5 class="mb-3"><i class="bi bi-stars me-2 text-accent"></i>Core Skills</h5>
+            <div class="skill-cloud" id="skillCloud"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section" aria-labelledby="portfolioTitle">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">04 / Portfolio</span><h2 id="portfolioTitle">Selected Work &amp; <span class="gradient-text">Clients</span></h2><p class="ai-intro">A portfolio spanning social media management, custom software, websites and digital marketing.</p></div>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal">
+          <article class="glass-card h-100 portfolio-card">
+            <div class="portfolio-top"><i class="bi bi-instagram ai-icon" aria-hidden="true"></i><span class="tag">15+ clients</span></div>
+            <h3>Social Media Management</h3>
+            <p>Social media management for 15+ clients, including:</p>
+            <ul class="portfolio-list"><li>Paneri Sarees</li><li>TheIdlimomo</li><li>Madhur Namkin</li><li>H.H Furniture</li><li>Delicious Bites</li><li>Om Shakti Cafe</li><li>Healthy Food Multi Cuisine Restaurant</li><li>Tito Clothing Brand</li><li>Pizza Planet</li><li>Jalaram Courier Services</li></ul>
+          </article>
+        </div>
+        <div class="col-lg-6 reveal">
+          <article class="glass-card h-100 portfolio-card">
+            <div class="portfolio-top"><i class="bi bi-code-slash ai-icon" aria-hidden="true"></i><span class="tag">Business solutions</span></div>
+            <h3>Custom Software</h3>
+            <p>Custom software for businesses across sectors, including:</p>
+            <ul class="portfolio-list"><li>Fastfood</li><li>Mobile Shop</li><li>Constructions</li><li>Jeweller Shop</li></ul>
+          </article>
+        </div>
+        <div class="col-lg-6 reveal">
+          <article class="glass-card h-100 portfolio-card">
+            <div class="portfolio-top"><i class="bi bi-globe2 ai-icon" aria-hidden="true"></i><span class="tag">Selected projects</span></div>
+            <h3>Websites</h3>
+            <p>Website projects for brands and businesses, including:</p>
+            <ul class="portfolio-list"><li>Zevar.in</li><li>Baadal Enterprises</li><li>Saurashtra Tech</li><li>Sama Al Merikh Building Materials LLC</li></ul>
+          </article>
+        </div>
+        <div class="col-lg-6 reveal">
+          <article class="glass-card h-100 portfolio-card">
+            <div class="portfolio-top"><i class="bi bi-megaphone ai-icon" aria-hidden="true"></i><span class="tag">Selected clients</span></div>
+            <h3>Digital Marketing</h3>
+            <p>Digital marketing work for:</p>
+            <ul class="portfolio-list"><li>Sama Al Merikh Building Materials LLC</li><li>Dietpoint</li></ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI TOOLS EXPERIENCE -->
+  <section id="ai-tools" class="section" aria-labelledby="aiToolsTitle">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">05 / AI Experience</span><h2 id="aiToolsTitle">AI Tools &amp; <span class="gradient-text">Creative Workflows</span></h2><p class="ai-intro">Experience with AI tools across research, writing, visual design, video and voice.</p></div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal slide-left">
+          <div class="glass-card h-100 ai-card">
+            <i class="bi bi-chat-square-text ai-icon" aria-hidden="true"></i>
+            <h3>Research &amp; Writing</h3>
+            <p>AI assistants for exploring ideas, working with information and developing written content.</p>
+            <div class="skill-cloud"><span class="tag">ChatGPT</span><span class="tag">Google Gemini</span><span class="tag">Claude</span><span class="tag">Perplexity</span><span class="tag">NotebookLM</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal slide-right">
+          <div class="glass-card h-100 ai-card">
+            <i class="bi bi-palette ai-icon" aria-hidden="true"></i>
+            <h3>Visual Design &amp; Images</h3>
+            <p>AI tools for visual ideation, image creation and design exploration.</p>
+            <div class="skill-cloud"><span class="tag">Canva AI</span><span class="tag">Midjourney</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal slide-left">
+          <div class="glass-card h-100 ai-card">
+            <i class="bi bi-camera-reels ai-icon" aria-hidden="true"></i>
+            <h3>Video &amp; Motion</h3>
+            <p>Generative video tools for exploring moving-image concepts and creative storytelling.</p>
+            <div class="skill-cloud"><span class="tag">Google Flow</span><span class="tag">Runway</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal slide-right">
+          <div class="glass-card h-100 ai-card">
+            <i class="bi bi-soundwave ai-icon" aria-hidden="true"></i>
+            <h3>Voice &amp; Audio</h3>
+            <p>AI voice tools for speech generation and voiceover exploration.</p>
+            <div class="skill-cloud"><span class="tag">ElevenLabs</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">06 / Education</span><h2>Learning & <span class="gradient-text">Credentials</span></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal zoom-in">
+          <div class="glass-card h-100 text-center edu-card">
+            <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h4>Bachelor of Computer Application (BCA)</h4>
+            <p class="mb-1">Saurashtra University</p>
+            <p class="text-muted-2">2010 - 2013</p>
+            <div class="score">76<small>%</small></div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal slide-right">
+          <div class="glass-card h-100">
+            <h5 class="mb-3"><i class="bi bi-patch-check-fill me-2 text-accent"></i>Certificates & Recognition</h5>
+            <div class="row g-3">
+              <div class="col-sm-6"><div class="cert"><i class="bi bi-award-fill"></i>C-DAC CCC Certificate</div></div>
+              <div class="col-sm-6"><div class="cert"><i class="bi bi-pc-display"></i>Computer Hardware Certificate</div></div>
+              <div class="col-sm-6"><div class="cert"><i class="bi bi-calculator-fill"></i>Tally Certificate</div></div>
+              <div class="col-sm-6"><div class="cert"><i class="bi bi-file-earmark-text-fill"></i>Work Experience Letter</div></div>
+              <div class="col-12"><div class="cert"><i class="bi bi-trophy-fill"></i>Appreciation certificates from ARTO, Police, District Magistrates and Highway Authorities</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">07 / Contact</span><h2>Let's <span class="gradient-text">Work Together</span></h2></div>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal slide-left">
+          <div class="glass-card h-100">
+            <a class="contact-row" href="tel:+919913876568"><i class="bi bi-telephone-fill"></i><div><small>Mobile</small>+91 991387 6568</div></a>
+            <a class="contact-row" href="mailto:satiamin68@gmail.com"><i class="bi bi-envelope-fill"></i><div><small>Email</small>satiamin68@gmail.com</div></a>
+            <div class="contact-row"><i class="bi bi-geo-alt-fill"></i><div><small>Address</small>Bokhira, Porbandar - 360575, Gujarat, India</div></div>
+            <a class="contact-row" href="https://linkedin.com/in/socialwithamin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><div><small>LinkedIn</small>linkedin.com/in/socialwithamin</div></a>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal slide-right">
+          <form class="glass-card h-100" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control fx-input" id="cName" placeholder="Your name" required></div>
+              <div class="col-md-6"><input type="email" class="form-control fx-input" id="cEmail" placeholder="Your email" required></div>
+              <div class="col-12"><input type="text" class="form-control fx-input" id="cSubject" placeholder="Subject"></div>
+              <div class="col-12"><textarea class="form-control fx-input" id="cMsg" rows="4" placeholder="Tell me about your project..." required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-glow w-100 magnetic"><i class="bi bi-send-fill me-2"></i>Send via Email</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-1">&copy; <span id="year"></span> Amin Sati. All rights reserved.</p>
+     
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Photo zoom modal -->
+  <div class="modal fade zoom-modal" id="photoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass-modal text-center p-3">
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        <img src="images/amin.jpg" class="img-fluid rounded-4 mt-2" alt="Amin Sati">
+        <h5 class="mt-3 mb-0">Amin Sati</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience details modal -->
+  <div class="modal fade zoom-modal" id="expModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="expTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <span class="t-date" id="expDate"></span>
+          <p class="mt-3" id="expSummary"></p>
+          <div id="expTags" class="d-flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
