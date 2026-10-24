@@ -251,3 +251,7 @@ a { text-decoration: none; }
 .portfolio-list { display: flex; flex-wrap: wrap; gap: .65rem; padding: 0; margin: 1.25rem 0 0; list-style: none; }
 .portfolio-list li { max-width: 100%; padding: .55rem .85rem; border: 1px solid var(--card-border); border-radius: 12px; background: rgba(127,127,127,.08); font-size: .9rem; overflow-wrap: anywhere; }
 @media (min-width: 992px) and (max-width: 1199px) { .navbar-nav { gap: 0 !important; } .glass-nav .nav-link { padding-left: .45rem; padding-right: .45rem; font-size: .85rem; } }
+
+/* Visitor counter */
+.visitors .stat-card h3.loading { opacity: .5; animation: pulse 1s infinite alternate; }
+@media print { .visitors { display: none; } }

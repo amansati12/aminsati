@@ -382,6 +382,19 @@
     </div>
   </section>
 
+  <!-- VISITORS -->
+  <section class="visitors py-5" aria-labelledby="visitorsTitle">
+    <div class="container">
+      <div class="section-head reveal"><span class="eyebrow">Live / Traffic</span><h2 id="visitorsTitle">Website <span class="gradient-text">Visitors</span></h2></div>
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 reveal"><div class="stat-card"><i class="bi bi-sun-fill"></i><h3 id="vToday" class="loading">...</h3><p>Today</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.1s"><div class="stat-card"><i class="bi bi-calendar-month-fill"></i><h3 id="vMonth" class="loading">...</h3><p>This Month</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.2s"><div class="stat-card"><i class="bi bi-calendar-range-fill"></i><h3 id="vYear" class="loading">...</h3><p>This Year</p></div></div>
+        <div class="col-6 col-md-3 reveal" style="--d:.3s"><div class="stat-card"><i class="bi bi-people-fill"></i><h3 id="vTotal" class="loading">...</h3><p>Total Visitors</p></div></div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer text-center">
     <div class="container">
       <p class="mb-1">&copy; <span id="year"></span> Amin Sati. All rights reserved.</p>
@@ -421,5 +434,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/visitors.js"></script>
 </body>
 </html>

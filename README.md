@@ -17,3 +17,7 @@ Tip: the "Save as PDF" button uses the browser print dialog with a clean print l
 
 ## Portfolio
 The Portfolio section in `index.html` lists social media management clients, custom software sectors, website projects and digital marketing clients. Edit the corresponding cards to update these lists.
+
+
+## Visitor counter
+`js/visitors.js` shows unique visitors for today, this month, this year and all-time (CounterAPI, free, no signup). Each browser is counted once per period. Change `NAMESPACE` at the top of the file to something unique to your site. Dates use India time.
